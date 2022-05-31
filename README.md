@@ -10,6 +10,10 @@ algoholic is a toolkit for creating algorithmic music and visuals using the open
 
 <img src="docs/example.png" />
 
+## instruments
+
+* heavybass~ : a bass synth
+
 ## objects
 
 * mseq : m-onz sequencer
