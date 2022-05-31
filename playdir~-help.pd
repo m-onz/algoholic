@@ -1,0 +1,35 @@
+#N canvas 699 306 673 419 12;
+#X floatatom 51 68 5 0 0 0 - - - 0;
+#X obj 107 303 *~ 0.8;
+#X obj 102 349 dac~;
+#X obj 9 199 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X text 51 42 seek by index;
+#X text 6 169 trigger the sound;
+#X obj 213 166 pdcontrol;
+#X msg 213 138 dir;
+#X msg 212 193 \$1/sounds/misc2;
+#X msg 352 199 \$1/sounds/misc;
+#X obj 213 111 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 352 168 pdcontrol;
+#X msg 352 140 dir;
+#X obj 351 116 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 107 278 playdir~;
+#X obj 240 26 loadbang;
+#X connect 0 0 14 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 14 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 14 1;
+#X connect 9 0 14 1;
+#X connect 10 0 7 0;
+#X connect 11 0 9 0;
+#X connect 12 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 1 0;
+#X connect 15 0 10 0;
+#X connect 15 0 13 0;

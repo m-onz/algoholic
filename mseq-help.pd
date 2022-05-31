@@ -1,0 +1,25 @@
+#N canvas 2 102 450 300 12;
+#X obj 23 18 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X floatatom 23 263 5 0 0 0 - - - 0;
+#X obj 23 108 metro 400;
+#X msg 49 185 11 12 13 14 - - - - 2 - - - 3 - -;
+#X obj 84 246 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 23 210 mseq;
+#X obj 158 87 randseq;
+#X obj 158 112 print;
+#X obj 153 46 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X floatatom 191 40 5 0 0 0 - - - 0;
+#X floatatom 236 42 5 0 0 0 - - - 0;
+#X connect 0 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 1;
+#X connect 5 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 1;
+#X connect 6 0 7 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 1;
+#X connect 10 0 6 2;
