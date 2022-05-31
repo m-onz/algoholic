@@ -16,6 +16,7 @@ generation;
 rests;
 #X listbox 60 342 39 0 0 0 - - - 0;
 #X obj 61 317 list;
+#X text 382 15 generate a random sequence for mseq;
 #X connect 1 0 5 0;
 #X connect 2 0 5 1;
 #X connect 3 0 5 2;
