@@ -1,9 +1,8 @@
 # algoholic
 
-<img src="docs/hedgehog.png" /> *
+<img src="docs/hedgehog.png" />
 
-algorithmic toolkit for audio and visuals for pure data &amp; GEM. *henry the hedghog: the official algoholic mascot.
-
+algorithmic toolkit for audio and visuals for pure data &amp; GEM. 
 
 ## about
 
