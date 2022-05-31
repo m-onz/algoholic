@@ -35,7 +35,7 @@ Please ensure you are using Pd version 0.50 and higher because some objects will
 
 ## author
 
-This library was created and currently maintained by Stephen Monslow.
+This library was created and currently maintained by [m-onz](https://m-onz.net) a.k.a. Stephen Monslow.
 
 ## listen
 
