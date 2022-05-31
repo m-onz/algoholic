@@ -8,6 +8,8 @@ algorithmic toolkit for audio and visuals for pure data &amp; GEM.
 
 algoholic is a toolkit for creating algorithmic music and visuals using the open source multimedia programming environment [pure data & GEM](https://puredata.info) at version 0.50 and higher. Algoholic is designed to run on any computer that can run Pd including single board computers like the raspberry pi. Algoholic is similar to [else](https://github.com/porres/pd-else) but is built entirely using vanilla pd abstractions for increased portability and ease of installation.
 
+<img src="docs/example.png" />
+
 ## objects
 
 * mseq : m-onz sequencer
