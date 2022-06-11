@@ -151,7 +151,7 @@ a[role=button] {
 }
 [data-theme=dark] {
   color-scheme: dark;
-  --background-color: #0e1a22;
+  --background-color: black;
   --color: hsl(205deg, 26%, 77%);
   --h1-color: #e3f2fc;
   --h2-color: #c3dff4;
