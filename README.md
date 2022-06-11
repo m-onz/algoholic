@@ -19,6 +19,6 @@ This library was created and currently maintained by [m-onz](https://m-onz.net).
 
 ## listen
 
-Here examples of music made with algoholic.
+Hear some examples of music made with algoholic.
 
 https://algoholic.bandcamp.com
