@@ -1,4 +1,4 @@
-#N canvas 0 0 1440 797 12;
+#N canvas 0 0 1438 797 12;
 #X obj 22 553 heavybass~, f 23;
 #X obj 14 719 dac~;
 #X obj 23 680 *~ 0.5;
