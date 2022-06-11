@@ -4,294 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>algoholic</title>
-    <meta name="description" content="">
-    <!-- <link rel="shortcut icon" href="https://picocss.com/favicon.ico"> -->
-    <link rel="canonical" href="https://picocss.com/examples/basic-template/">
+    <meta name="description" content="algorithmic audio visual toolkit for audio and visuals for pure data & GEM">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
    <link rel="stylesheet" href="custom.css">
   </head>
-
   <body>
-    <header class="container">
+    <header class="container" style="background:#060606;padding:2em;">
       <hgroup>
         <h1>algoholic</h1>
-        <h2>algorithmic toolkit for audio and visuals for <a href="https://puredata.info" target="_blank" rel="noreferrer">pure data & GEM</a></h2>
+        <h2>algorithmic audio visual toolkit for <a href="https://puredata.info" target="_blank" rel="noreferrer">pure data & GEM</a></h2>
       </hgroup>
-      <!-- <nav>
-        <ul>
-          <li>
-            <details role="list">
-              <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
-              <ul role="listbox">
-                <li><a href="#" data-theme-switcher="auto">Auto</a></li>
-                <li><a href="#" data-theme-switcher="light">Light</a></li>
-                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <details role="list">
-              <summary aria-haspopup="listbox">Examples</summary>
-              <ul role="listbox">
-                <li><a href="../preview/">Preview</a></li>
-                <li><a href="../preview-rtl/">Right-to-left</a></li>
-                <li><a href="../classless/">Class-less</a></li>
-                <li><a href="../basic-template/">Basic template</a></li>
-                <li><a href="../company/">Company</a></li>
-                <li><a href="../google-amp/">Google Amp</a></li>
-                <li><a href="../sign-in/">Sign in</a></li>
-                <li><a href="../bootstrap-grid/">Bootstrap grid</a></li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </nav> -->
     </header>
-
     <main class="container">
-
       <section id="overview">
         <h2>Overview</h2>
-        <p>algoholic is a toolkit for creating algorithmic music and visuals using the open source multimedia programming environment <a href="https://puredata.info">pure data</a> (including the video extension GEM) at version 0.50 and higher.
+        <p>Algoholic is a toolkit for creating algorithmic music and visuals using the open source multimedia programming environment <a href="https://puredata.info">pure data</a> (including the video extension GEM) at version 0.50 and higher.
         <br><br>Algoholic is designed to run on any computer that can run Pd including single board computers like the raspberry pi. Algoholic is built entirely using vanilla pd abstractions for increased portability and ease of installation.</p>
-
-        <h3>Instruments</h3>
-
-        <ul>
-          <li>heavybass~</li>
-        </ul>
-
-        <h3>Objects</h3>
-        <ul>
-          <li>mseq : m-onz sequencer</li>
-          <li>randseq : random sequence</li>
-          <li>playdir~ : play sound directory</li>
-        </ul>
-
-      </section>
-
-<!--
-      <section id="typography">
-        <h2>Screenshot</h2>
-
-        <p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
-
-        <blockquote>
-          "Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at dui sit amet ipsum cursus ornare."
-          <footer>
-            <cite>- Phasellus eget lacinia</cite>
-          </footer>
-        </blockquote>
-
-        <h3>Lists</h3>
-        <ul>
-          <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-          <li>Nam et magna at libero scelerisque egestas.</li>
-          <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-          <li>Proin ultricies turpis et volutpat vehicula.</li>
-        </ul>
-
-        <h3>Inline text elements</h3>
-        <div class="grid">
-          <p><a href="#" onclick="event.preventDefault()">Primary link</a></p>
-          <p><a href="#" class="secondary" onclick="event.preventDefault()">Secondary link</a></p>
-          <p><a href="#" class="contrast" onclick="event.preventDefault()">Contrast link</a></p>
-        </div>
-        <div class="grid">
-          <p><strong>Bold</strong></p>
-          <p><em>Italic</em></p>
-          <p><u>Underline</u></p>
-        </div>
-        <div class="grid">
-          <p><del>Deleted</del></p>
-          <p><ins>Inserted</ins></p>
-          <p><s>Strikethrough</s></p>
-        </div>
-        <div class="grid">
-          <p><small>Small </small></p>
-          <p>Text <sub>Sub</sub></p>
-          <p>Text <sup>Sup</sup></p>
-        </div>
-        <div class="grid">
-          <p><abbr title="Abbreviation" data-tooltip="Abbreviation">Abbr.</abbr></p>
-          <p><kbd>Kbd</kbd></p>
-          <p><mark>Highlighted</mark></p>
-        </div>
-
-        <h3>Heading 3</h3>
-        <p>Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        <h4>Heading 4</h4>
-        <p>Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.</p>
-        <h5>Heading 5</h5>
-        <p>Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in consequat luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam sem.</p>
-        <h6>Heading 6</h6>
-        <p>Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in velit.</p>
-
-        <figure>
-          <img src="https://source.unsplash.com/a562ZEFKW8I/2000x1000" alt="Minimal landscape">
-          <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
-        </figure>
-      </section>
-
-      <section id="buttons">
-        <h2>Buttons</h2>
-        <div class="grid">
-          <button>Primary</button>
-          <button class="secondary">Secondary</button>
-          <button class="contrast">Contrast</button>
-        </div>
-        <div class="grid">
-          <button class="outline">Primary outline</button>
-          <button class="outline secondary">Secondary outline</button>
-          <button class="outline contrast">Contrast outline</button>
-        </div>
-      </section>
-
-      <section id="form">
-        <form>
-          <h2>Form elements</h2>
-
-          <label for="search">Search</label>
-          <input type="search" id="search" name="search" placeholder="Search">
-
-          <label for="text">Text</label>
-          <input type="text" id="text" name="text" placeholder="Text">
-          <small>Curabitur consequat lacus at lacus porta finibus.</small>
-
-          <label for="select">Select</label>
-          <select id="select" name="select" required>
-            <option value="" selected>Select…</option>
-            <option>…</option>
-          </select>
-
-          <label for="file">File browser
-            <input type="file" id="file" name="file">
-          </label>
-
-          <label for="range">Range slider
-            <input type="range" min="0" max="100" value="50" id="range" name="range">
-          </label>
-
-          <div class="grid">
-            <label for="valid">
-              Valid
-              <input type="text" id="valid" name="valid" placeholder="Valid" aria-invalid="false">
-            </label>
-            <label for="invalid">
-              Invalid
-              <input type="text" id="invalid" name="invalid" placeholder="Invalid" aria-invalid="true">
-            </label>
-            <label for="disabled">
-              Disabled
-              <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled>
-            </label>
-          </div>
-
-          <div class="grid">
-
-            <label for="date">Date
-              <input type="date" id="date" name="date">
-            </label>
-
-            <label for="time">Time
-              <input type="time" id="time" name="time">
-            </label>
-
-            <label for="color">Color
-              <input type="color" id="color" name="color" value="#0eaaaa">
-            </label>
-
-          </div>
-
-          <div class="grid">
-
-            <fieldset>
-              <legend><strong>Checkboxes</strong></legend>
-              <label for="checkbox-1">
-                <input type="checkbox" id="checkbox-1" name="checkbox-1" checked>
-                Checkbox
-              </label>
-              <label for="checkbox-2">
-                <input type="checkbox" id="checkbox-2" name="checkbox-2">
-                Checkbox
-              </label>
-            </fieldset>
-
-            <fieldset>
-              <legend><strong>Radio buttons</strong></legend>
-              <label for="radio-1">
-                <input type="radio" id="radio-1" name="radio" value="radio-1" checked>
-                Radio button
-              </label>
-              <label for="radio-2">
-                <input type="radio" id="radio-2" name="radio" value="radio-2">
-                Radio button
-              </label>
-            </fieldset>
-
-            <fieldset>
-              <legend><strong>Switches</strong></legend>
-              <label for="switch-1">
-                <input type="checkbox" id="switch-1" name="switch-1" role="switch" checked>
-                Switch
-              </label>
-              <label for="switch-2">
-                <input type="checkbox" id="switch-2" name="switch-2" role="switch">
-                Switch
-              </label>
-            </fieldset>
-
-          </div>
-
-          <input type="reset" value="Reset" onclick="event.preventDefault()">
-          <input type="submit" value="Submit" onclick="event.preventDefault()">
-
-        </form>
-      </section>
-
-      <section id="accordions">
-        <h2>Accordions</h2>
-        <details>
-          <summary>Accordion 1</summary>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit amet, congue turpis.</p>
-        </details>
+        <h3>List of objects</h3>
         <details open>
-          <summary>Accordion 2</summary>
+          <summary>control objects</summary>
           <ul>
-            <li>Vestibulum id elit quis massa interdum sodales.</li>
-            <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
-            <li>Quisque sed eros non eros ornare elementum.</li>
-            <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
+            <li>mseq : sequencer</li>
+            <li>randseq : generates a random sequence for mseq</li>
           </ul>
         </details>
+        <details>
+          <summary>audio objects</summary>
+          <ul>
+            <li>playdir~ : play sounds from a directory</li>
+          </ul>
+        </details>
+        <details>
+          <summary>instruments</summary>
+          <ul>
+            <li>heavybass~</li>
+          </ul>
+        </details>
+        <details>
+          <summary>gem objects</summary>
+        </details>
       </section>
-
-      <article id="article">
-        <h2>Article</h2>
-        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
-        <footer><small>Duis nec elit placerat, suscipit nibh quis, finibus neque.</small></footer>
+      <article id="algorithmic-composition">
+        <h2>Algorithmic composition with mseq</h2>
+        <p>mseq is a simplified version of <a href="https://github.com/porres/pd-else" target="_blank" rel="noreferrer">else/sequencer</a> that takes a message consisting of numbers: "1 2 3 4" in its right inlet.
+          When mseq's left inlet is banged it will return each value in the message sequentially with rests represented as hyphens "-".
+          These numbers can be used as musical notes (MIDI numbers), parameterised controls or literally anything. Although
+          this is incredibly simple (compared to other algorithmic composition strategies) it has produced complex and sophisticated
+          results.
+        </p>
+        <footer><small><p>
+        I have used this simple sequencing strategy to create music in many different genres. When people think of the term "algorithmic"
+        they often mistakenly assume that algorithms must be complex. However the most simple ideas are often the most powerful.
+        </p></small></footer>
       </article>
-
-      <section id="progress">
-        <h2>Progress bar</h2>
-        <progress id="progress-1" value="25" max="100"></progress>
-        <progress id="progress-2"></progress>
-      </section>
-
-      <section id="loading">
-        <h2>Loading</h2>
-        <article aria-busy="true"></article>
-        <button aria-busy="true">Please wait…</button>
-      </section>
-    -->
-
     </main>
-
-
     <footer class="container">
       <small>algoholic <a href="https://github.com/m-onz/algoholic" target="_blank" rel="noreferrer">Source code</a></small>
     </footer>
-
   </body>
-
 </html>
