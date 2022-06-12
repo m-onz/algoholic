@@ -13,6 +13,10 @@ Please ensure you are using Pd version 0.50 and higher because some objects will
 * clone algoholic into your existing Pd externals folder.
 * alternatively clone to a different folder and add the path in pd preferences
 
+## documentation
+
+You can find documentation <a href="https://m-onz.github.io/algoholic/" target="_blank" rel="noreferrer">here</a>.
+
 ## author
 
 This library was created and currently maintained by [m-onz](https://m-onz.net).
