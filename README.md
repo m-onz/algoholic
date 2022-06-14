@@ -26,3 +26,8 @@ This library was created and currently maintained by [m-onz](https://m-onz.net).
 Hear some examples of music made with algoholic.
 
 https://algoholic.bandcamp.com
+
+## todo list
+
+* constrained sequence : conseq
+* integrate pdjs as an optional extension
