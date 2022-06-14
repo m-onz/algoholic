@@ -20,6 +20,7 @@
         <h2>Overview</h2>
         <p>Algoholic is a toolkit for creating algorithmic music and visuals using the open source multimedia programming environment <a href="https://puredata.info">pure data</a> & gem at version 0.50 and higher.
         <br><br>Algoholic is designed to run on any computer that can run Pd including single board computers like the raspberry pi. Algoholic is built entirely using vanilla pd abstractions for increased portability and ease of installation.</p>
+        <br><br>I have learnt alot from people like Roman Haefeli (netpd author) and Mike Moreno DSP and their patches may end up being assimilated! Sorry... not sorry. I you will come to find that I am a bit of magpie for Pd but you will appreciate not having to do all this leg work yourself.</p>
         <h3>List of objects</h3>
         <details open>
           <summary>control objects</summary>
@@ -38,6 +39,7 @@
           <summary>instruments</summary>
           <ul>
             <li>heavybass~</li>
+            <li>squarepoly~~</li>
             <li>hihat~</li>
             <li>snare~</li>
             <li>kick~</li>
@@ -51,23 +53,17 @@
           </ul>
         </details>
       </section>
-      <!-- <article id="algorithmic-composition">
-        <h2>Algorithmic composition with mseq</h2>
-        <p>mseq is a simplified version of <a href="https://github.com/porres/pd-else" target="_blank" rel="noreferrer">else/sequencer</a> that takes a message consisting of numbers: "1 2 3 4" in its right inlet.
-          When mseq's left inlet is banged it will return each value in the message sequentially with rests represented as hyphens "-".
-          These numbers can be used as musical notes (MIDI numbers), parameterised controls or literally anything. Although
-          this is incredibly simple (compared to other algorithmic composition strategies) it has produced complex and sophisticated
-          results.
-        </p>
+      <article id="algorithmic-composition">
+        <h2>Get started</h2>
+        <p>Pure data patches have the extension ".pd" and each object has a help file that you can open from your file manager or within pd you can right click and select "show help".</p>
         <footer><small><p>
-        I have used this simple sequencing strategy to create music in many different genres. When people think of the term "algorithmic"
-        they often mistakenly assume that algorithms must be complex. However the most simple ideas are often the most powerful.
+        Pure data stores patches as plain text (this is really useful for advanced users) but don't edit the text within a .pd file unless your a pure data expert.
         </p></small></footer>
-      </article> -->
+      </article>
 
       <h3>Listen</h3>
 
-      <iframe style="border: 0; width: 100%; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1583910299/size=large/bgcol=333333/linkcol=0f91ff/artwork=none/transparent=true/" seamless><a href="https://algoholic.bandcamp.com/album/examples">examples by algoholic</a></iframe>
+      <iframe style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=1583910299/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://algoholic.bandcamp.com/album/examples">examples by algoholic</a></iframe>
       <br><br>
 
       <article id="algorithmic-composition">
@@ -78,11 +74,9 @@
         </p></small></footer>
       </article>
 
-
-
     </main>
     <footer class="container">
-      <small>algoholic was created and maintained by <a href="https://m-onz.net" target="_blank" rel="noreferrer">m-onz</a></small>
+      <small>algoholic was created and maintained b <a href="https://m-onz.net" target="_blank" rel="noreferrer">m-onz</a></small>
     </footer>
   </body>
 </html>
