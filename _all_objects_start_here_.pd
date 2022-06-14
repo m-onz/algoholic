@@ -1,0 +1,24 @@
+#N canvas 715 153 636 573 12;
+#X text 12 15 algoholic;
+#X text 86 109 complete list of available objects sorted by category
+;
+#X obj 18 140 mseq;
+#X obj 17 167 randseq;
+#X obj 17 245 playdir~;
+#X text 12 109 control;
+#X text 14 217 audio objects;
+#X text 16 287 instruments;
+#X text 541 409 m-onz.net;
+#X text 568 389 m-onz;
+#X obj 21 318 heavybass~;
+#X obj 21 348 squarepoly~;
+#X obj 21 375 hihat~;
+#X obj 22 402 snare~;
+#X obj 21 429 kick~;
+#X obj 21 456 clap~;
+#X obj 20 536 m-vj;
+#X text 18 507 GEM;
+#X text 196 511 very little documentation yet sorry. More to come.
+Right click to see help.;
+#X text 89 14 algorithmic audio visual toolkit for pure data and GEM
+;
