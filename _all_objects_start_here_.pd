@@ -1,24 +1,26 @@
-#N canvas 715 153 636 573 12;
-#X text 12 15 algoholic;
-#X text 86 109 complete list of available objects sorted by category
+#N canvas 706 8 636 710 12;
+#X text 11 16 algoholic;
+#X text 69 135 complete list of available objects sorted by category
 ;
-#X obj 18 140 mseq;
-#X obj 17 167 randseq;
-#X obj 17 245 playdir~;
-#X text 12 109 control;
-#X text 14 217 audio objects;
-#X text 16 287 instruments;
-#X text 541 409 m-onz.net;
-#X text 568 389 m-onz;
-#X obj 21 318 heavybass~;
-#X obj 21 348 squarepoly~;
-#X obj 21 375 hihat~;
-#X obj 22 402 snare~;
-#X obj 21 429 kick~;
-#X obj 21 456 clap~;
-#X obj 20 536 m-vj;
-#X text 18 507 GEM;
-#X text 196 511 very little documentation yet sorry. More to come.
+#X obj 21 138 mseq;
+#X obj 20 165 randseq;
+#X obj 20 243 playdir~;
+#X text 15 107 control;
+#X text 17 215 audio objects;
+#X text 19 285 instruments;
+#X text 539 421 m-onz.net;
+#X text 566 401 m-onz;
+#X obj 24 316 heavybass~;
+#X obj 25 368 squarepoly~;
+#X obj 25 422 hihat~;
+#X obj 26 449 snare~;
+#X obj 27 474 kick~;
+#X obj 27 501 clap~;
+#X obj 30 612 m-vj;
+#X text 214 658 very little documentation yet sorry. More to come.
 Right click to see help.;
-#X text 89 14 algorithmic audio visual toolkit for pure data and GEM
+#X text 12 36 algorithmic audio visual toolkit for pure data and GEM
 ;
+#X obj 26 396 trianglepoly~;
+#X obj 25 343 sawpoly~;
+#X text 28 583 visuals. GEM;

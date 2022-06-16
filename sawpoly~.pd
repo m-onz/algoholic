@@ -1,0 +1,15 @@
+#N canvas 50 430 579 300 12;
+#X declare -path ./abs;
+#X obj 13 21 declare -path ./abs;
+#X msg 29 101 next \$1;
+#X obj 29 153 *~ 0.4;
+#X obj 29 74 inlet;
+#X obj 29 178 outlet~;
+#X obj 221 96 inlet;
+#X obj 220 122 s sawpoly_decay;
+#X obj 29 127 clone _sawpoly~ 8;
+#X connect 1 0 7 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 5 0 6 0;
+#X connect 7 0 2 0;
