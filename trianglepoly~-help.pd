@@ -1,11 +1,11 @@
-#N canvas 272 151 758 525 12;
+#N canvas 272 151 897 612 12;
 #X floatatom 66 353 5 0 0 0 - - - 0;
 #X msg 66 221 60 \, 62 \, 65 \, 67;
-#X obj 68 402 *~ 0.22;
+#X obj 58 477 *~ 0.22;
 #X floatatom 349 170 5 0 0 0 - - - 0;
 #X msg 180 220 60 \, 63 \, 65 \, 67;
 #X obj 386 94 + 1;
-#X obj 67 462 dac~;
+#X obj 46 510 dac~;
 #X obj 66 139 random 2;
 #X obj 66 164 sel 0 1, f 33;
 #X obj 66 38 metro 200;
@@ -14,7 +14,7 @@
 #X obj 352 94 f 0;
 #X obj 351 120 % 250;
 #X obj 351 145 + 100;
-#X obj 67 376 trianglepoly~;
+#X obj 66 381 trianglepoly~;
 #X obj 208 376 trianglepoly~;
 #X floatatom 210 350 5 0 0 0 - - - 0;
 #X msg 455 303 51;
@@ -28,10 +28,18 @@
 #X obj 459 225 sel 1;
 #X obj 503 229 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
+#X msg 468 442 start;
+#X msg 475 470 stop;
+#X text 512 444 start streaming audio;
+#X text 514 470 stop streaming audio;
+#X obj 460 563 writesf~ 2, f 15;
+#X msg 428 363 open ./trianglepoly~-help.wav;
 #X connect 0 0 14 0;
 #X connect 1 0 0 0;
-#X connect 2 0 6 0;
 #X connect 2 0 6 1;
+#X connect 2 0 6 0;
+#X connect 2 0 31 0;
+#X connect 2 0 31 1;
 #X connect 3 0 14 1;
 #X connect 4 0 0 0;
 #X connect 5 0 11 1;
@@ -63,3 +71,6 @@
 #X connect 24 0 25 0;
 #X connect 25 0 21 0;
 #X connect 25 0 26 0;
+#X connect 27 0 31 0;
+#X connect 28 0 31 0;
+#X connect 32 0 31 0;
