@@ -1,4 +1,4 @@
-#N canvas 599 46 731 701 12;
+#N canvas 420 22 794 701 12;
 #X obj 67 598 list store;
 #X obj 68 66 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;

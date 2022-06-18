@@ -1,0 +1,20 @@
+#N canvas 175 315 450 300 12;
+#X obj 183 38 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X msg 185 59 compile;
+#X text 242 58 recompile source;
+#X floatatom 185 87 5 0 0 0 - - - 0;
+#X msg 191 114 1 2 3;
+#X text 202 36 call function bang;
+#X text 228 84 call function msg_float;
+#X text 244 114 call function list;
+#X msg 193 152 test x y z;
+#X text 280 150 call function test;
+#X obj 103 238 print;
+#X obj 103 213 js pdjs-test.js;
+#X connect 0 0 11 0;
+#X connect 1 0 11 0;
+#X connect 3 0 11 0;
+#X connect 4 0 11 0;
+#X connect 8 0 11 0;
+#X connect 11 0 10 0;
