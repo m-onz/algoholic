@@ -1,13 +1,13 @@
 
 :root {
-  --font-family: "Monospace", monospace;
+  --font-family: Arial;
   --border-radius: 0;
   --form-element-spacing-vertical: 1rem;
   --form-element-spacing-horizontal: 1.25rem;
 }
 
 * {
-  font-family: "Monospace";
+  font-family: Arial;
 }
 
 *::selection {
