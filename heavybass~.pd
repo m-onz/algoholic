@@ -24,8 +24,8 @@
 #X text 143 153 attack \, sustain \, release;
 #X obj 274 52 inlet;
 #X obj 385 78 loadbang;
-#X msg 385 103 8 94 20;
 #X obj 385 128 unpack 0 0 0, f 26;
+#X msg 385 103 8 81 20;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -49,8 +49,8 @@
 #X connect 20 0 21 0;
 #X connect 21 0 9 0;
 #X connect 23 0 20 2;
-#X connect 24 0 25 0;
-#X connect 25 0 26 0;
-#X connect 26 0 20 0;
-#X connect 26 1 20 1;
-#X connect 26 2 20 2;
+#X connect 24 0 26 0;
+#X connect 25 0 20 0;
+#X connect 25 1 20 1;
+#X connect 25 2 20 2;
+#X connect 26 0 25 0;
