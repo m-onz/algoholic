@@ -5,6 +5,7 @@ algorithmic toolkit for audio and visuals for pure data &amp; GEM.
 ## about
 
 algoholic is a toolkit for creating algorithmic music and visuals using the open source multimedia programming environment [pure data & GEM](https://puredata.info) at version 0.50 and higher. Algoholic is designed to run on any computer that can run Pd including single board computers like the raspberry pi. Algoholic is similar to [else](https://github.com/porres/pd-else) but is built entirely using vanilla pd abstractions for increased portability and ease of installation.
+It will play nicely with other pure data live coding tools like: [live coding toolkit for pure data](https://github.com/algomusic/Live-Coding-Toolkit-for-Pure-Data) so you can interoperate with any other pure data synth or patch.
 
 ## installation
 
@@ -12,6 +13,7 @@ Please ensure you are using Pd version 0.50 and higher because some objects will
 
 * clone algoholic into your existing Pd externals folder.
 * alternatively clone to a different folder and add the path in pd preferences
+* install the [live coding toolkit for pure data](https://github.com/algomusic/Live-Coding-Toolkit-for-Pure-Data) to hear the examples
 
 ## documentation
 
@@ -27,7 +29,3 @@ Hear some examples of music made with algoholic.
 
 https://algoholic.bandcamp.com
 
-## todo list
-
-* constrained sequence : conseq
-* integrate pdjs as an optional extension
