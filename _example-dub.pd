@@ -1,4 +1,4 @@
-#N canvas 0 0 1438 797 12;
+#N canvas 0 0 719 797 12;
 #X obj 22 441 dac~;
 #X obj 21 411 *~ 0.9;
 #X obj 59 222 trianglepoly~;
@@ -150,11 +150,11 @@
 #X obj 67 289 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 390 434 *~;
-#X obj 433 436 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 392 372 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 1138 729 *~ 0.5;
 #X obj 1056 478 *~ 0.5;
-#X obj 510 487 *~ 0.4;
+#X obj 540 490 *~ 0.4;
 #X obj 290 754 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 #dcdcdc #000000 #000000 0 256;
 #X obj 225 732 nbx 3 14 0 100 0 0 empty empty empty 0 -8 0 10 #dcdcdc
@@ -185,6 +185,34 @@
 #X floatatom 643 924 5 0 2000 2 Release_(ms) - - 0;
 #X obj 590 985 synth~ 500;
 #X floatatom 657 958 5 0 10000 2 Glide\ (ms) - - 0;
+#N canvas 119 177 337 300 send_to_processing 0;
+#X obj 62 152 udpsend;
+#X msg 55 125 disconnect;
+#X obj 147 166 packOSC;
+#X obj 62 187 tgl 15 0 empty empty 1=connected 20 8 0 8 #00fc04 #f8fc00
+#000000 0 1;
+#X msg 33 103 connect 127.0.0.1 9999;
+#X obj 35 77 loadbang;
+#X obj 163 34 inlet;
+#X obj 163 59 b;
+#X msg 147 136 send /event1 11;
+#X msg 210 99 send /event2 11;
+#X obj 216 33 inlet;
+#X obj 216 58 b;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 2 0;
+#X connect 9 0 2 0;
+#X connect 10 0 11 0;
+#X connect 11 0 9 0;
+#X restore 709 481 pd send_to_processing;
+#X obj 846 454 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
 #X connect 1 0 154 0;
@@ -221,6 +249,7 @@
 #X connect 29 0 30 0;
 #X connect 30 0 27 0;
 #X connect 30 0 32 0;
+#X connect 30 0 167 0;
 #X connect 31 0 29 0;
 #X connect 32 0 38 0;
 #X connect 33 0 26 0;
@@ -375,3 +404,4 @@
 #X connect 163 0 164 4;
 #X connect 164 0 1 0;
 #X connect 165 0 164 5;
+#X connect 167 0 166 1;

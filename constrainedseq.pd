@@ -1,0 +1,14 @@
+#N canvas 158 320 450 300 12;
+#X declare -lib pdjs -path pdjs;
+#X obj 9 15 inlet;
+#X obj 61 16 inlet;
+#X obj 113 15 inlet;
+#X obj 164 16 inlet;
+#X obj 11 43 js ./constrainedseq.js;
+#X obj 11 68 outlet;
+#X obj 181 46 declare -lib pdjs -path pdjs;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 2;
+#X connect 3 0 4 3;
+#X connect 4 0 5 0;
